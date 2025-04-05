@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Logic</title>
+    <script src="test_logic.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: auto; }
+        h2 { color: #333; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+        .highlight { color: #d63384; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>📝Problem Requirements</h2>
+        <p> Create a function <span class="highlight">processWithDelay(numbers)</span> that demonstrates understanding of <strong>modern async
+            patterns.</strong></p>
+        <ul>
+            <li>The function should process each number in the array with a <strong>1-second delay</strong> between
+                each number. The function should print each number to the console when it is
+                processed.</li>
+            <li>The function should return a <strong>Promise</strong> that resolves after all numbers are processed.</li>
+            <li>If the array is empty, <strong>resolve immediately</strong>.</li>
+            <li>If the input is not a valid array of numbers, <strong>reject with an error</strong>.</li>
+        </ul>
+
+        <h2>💡Code Explanation</h2>
+        <p>The implementation involves the following key concepts:</p>
+        <ul>
+            <li><strong>Promise</strong>: Ensures asynchronous processing and allows success or error handling.</li>
+            <li><strong>setTimeout()</strong>: Creates the 1-second delay between each number output.</li>
+            <li><strong>async/await</strong>: Used for waiting between outputs in a clean, readable way.</li>
+            <li><strong>reject()</strong>: Used to throw an error if the input is invalid.</li>
+        </ul>
+
+        <h2>📌Example Input & Expected Output</h2>
+        <pre>
+📥 Input: processWithDelay([1, 2, 3, 4, 5])
+📤 Output:
+(After 1 second) 1
+(After 2 seconds) 2
+(After 3 seconds) 3
+(After 4 seconds) 4
+(After 5 seconds) 5
+✅ "All numbers processed"
+        </pre>
+    </div>
+</body>
+</html>
+
+  
